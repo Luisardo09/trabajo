@@ -89,7 +89,7 @@ Forged Transmits:Controla si la VM puede enviar paquetes con MAC diferente a la 
 //Crear una tabla con al menos 3 errores comunes (ej: KVM not available, uBridge permissions, Firewall blocking port 3080) y su solución técnica\\
 
 
-| ❌ Error común                   | 📝 Causa                                                           | 🛠️ Solución técnica                                                                                      |                               
+| ❌ Error común                   | 📝 Causa                                                           | 🛠️ Solución técnica                                                                                      |                       |        
 | ------------------------------- | ------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------- | ----------------------------- |
 | **KVM not available**           | KVM no está habilitado en BIOS o VT-x/AMD-V desactivado            | Entrar al BIOS/UEFI → Activar **Intel VT-x** o **AMD-V** → Reiniciar → Verificar con `egrep -c '(vmx      |   
 | **uBridge permissions**         | GNS3 uBridge no tiene permisos de administrador para abrir sockets | Ejecutar uBridge como **administrador/root** o ajustar permisos del binario (`chmod +x` en Linux)         |                              |
