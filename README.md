@@ -55,7 +55,7 @@ Configurar la GNS3 VM con otra IP del mismo rango (ej. 192.168.56.101).
 
 Verificar la conectividad (ping entre host y VM).
 
-(Observar imagen "Host-Only y Promiscuous Mode"
+(Observar imagen "Host-Only y Promiscuous Mode")
 
 //Modo Promiscuo: Explicar técnicamente por qué es necesario para el tráfico de Capa 2.\\
 
@@ -86,4 +86,4 @@ Forged Transmits:Controla si la VM puede enviar paquetes con MAC diferente a la 
 
 //Crear una tabla con al menos 3 errores comunes (ej: KVM not available, uBridge permissions, Firewall blocking port 3080) y su solución técnica\\
 
-(Mirar imagen "Matriz de Solución de Errores")
+(observar imagen "Matriz de Solución de Errores")
