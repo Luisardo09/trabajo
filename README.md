@@ -3,10 +3,15 @@
 
 //Aislamiento de Núcleo y VBS: Explicar el impacto de las funciones de seguridad de Windows 11 en la virtualización.\\
 Impacto en la virtualización
+
 -Mayor seguridad: Protegen el sistema contra malware y ataques al kernel.
+
 -Aislamiento de procesos críticos: Evitan accesos no autorizados a memoria sensible.
+
 -Menor rendimiento: Puede afectar la velocidad de máquinas virtuales.
+
 -Compatibilidad: Algunos programas como VirtualBox o VMware Workstation pueden presentar conflictos
+
 
 //Activación de VT-x/AMD-V: Procedimiento para habilitar el soporte de hardware y cómo verificarlo desde el sistema operativo.\\
 -Se activa al ingresar a la BIOS y activar Intel Virtualization Technology (VT-x) o SVM Mode (AMD-V), guardar cambios y reiniciar
