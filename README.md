@@ -17,7 +17,7 @@ Impacto en la virtualización
 
 -Se activa al ingresar a la BIOS y activar Intel Virtualization Technology (VT-x) o SVM Mode (AMD-V), guardar cambios y reiniciar
 
--Para verificar accedemos al administrador de tareas luego a CPU y verificamos si virtualización esta habilitada (observar imagen "Virtualizacion")
+-Para verificar accedemos al administrador de tareas luego a CPU y verificamos si virtualización esta habilitada (observar imagen "Virtualizacion.png")
 
 2. GNS3 VM: El Motor de Simulación
 
