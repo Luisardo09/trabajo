@@ -90,7 +90,7 @@ Forged Transmits:Controla si la VM puede enviar paquetes con MAC diferente a la 
 
 | ❌ Error común                   | 📝 Causa                                                           | 🛠️ Solución técnica                                                                                      |                               |
 | ------------------------------- | ------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------- | ----------------------------- |
-| **KVM not available**           | KVM no está habilitado en BIOS o VT-x/AMD-V desactivado            | Entrar al BIOS/UEFI → Activar **Intel VT-x** o **AMD-V** → Reiniciar → Verificar con `egrep -c '(vmx      |  /proc/cpuinfo` en Linux |
+| **KVM not available**           | KVM no está habilitado en BIOS o VT-x/AMD-V desactivado            | Entrar al BIOS/UEFI → Activar **Intel VT-x** o **AMD-V** → Reiniciar → Verificar con `egrep -c '(vmx      |   |
 | **uBridge permissions**         | GNS3 uBridge no tiene permisos de administrador para abrir sockets | Ejecutar uBridge como **administrador/root** o ajustar permisos del binario (`chmod +x` en Linux)         |                              |
 | **Firewall blocking port 3080** | El firewall bloquea la comunicación entre GUI y GNS3 VM            | Abrir el puerto 3080 en el firewall de Windows o del servidor (`netsh advfirewall firewall add rule ...`) |                             |
 
