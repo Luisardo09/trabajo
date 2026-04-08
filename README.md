@@ -56,19 +56,30 @@ Configurar la GNS3 VM con otra IP del mismo rango (ej. 192.168.56.101).
 Verificar la conectividad (ping entre host y VM).
 
 //Modo Promiscuo: Explicar técnicamente por qué es necesario para el tráfico de Capa 2.\\
+
 -En la Capa 2, los dispositivos trabajan con direcciones MAC y envían tráfico específico dentro de la red. Sin modo promiscuo, la interfaz solo recibe tráfico dirigido a su MAC y se pierden paquetes importantes en simulaciones
-Con modo promiscuo. Se capturan todos los frames Ethernet, permite analizar y reenviar tráfico de switches y routers virtuales
+
+-Con modo promiscuo. Se capturan todos los frames Ethernet, permite analizar y reenviar tráfico de switches y routers virtuales
 
 4. Integración con VMware ESXi (Remoto)
+
 //Arquitectura Cliente-Servidor: Cómo conectar el GUI de GNS3 de la laptop a un servidor ESXi físico.\\
+
 -Configurar red entre laptop y servidor ESXi (puede ser LAN o VPN). luego importamos la máquina virtual de GNS3 en el servidor físico. Abrir GNS3 en la laptop, vamos a Preferences → Server → Remote Server y ingresamo la IP del servidor ESXi y puerto del GNS3 VM, hacemos ping desde GUI a GNS3 VM y nos aseguramos de que el tráfico de control fluya correctamente
 
+
 //Seguridad en vSwitch: Investigar la configuración de "Políticas de Seguridad" (Promiscuous mode, MAC address changes) en el port group de ESXi.\\
+
 -Cada port group tiene Políticas de Seguridad que controlan el tráfico y la visibilidad de la red
+
 Promiscuous Mode: Permite que la VM reciba todo el tráfico de la red, no solo el dirigido a su MAC
+
 MAC Address Changes: Controla si la VM puede cambiar su dirección MAC virtual
+
 Forged Transmits:Controla si la VM puede enviar paquetes con MAC diferente a la asignada
 
 5. Matriz de Solución de Errores (Troubleshooting)
+
 //Crear una tabla con al menos 3 errores comunes (ej: KVM not available, uBridge permissions, Firewall blocking port 3080) y su solución técnica\\
+
 (Mirar imagen "Matriz de Solución de Errores")
