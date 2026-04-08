@@ -14,30 +14,45 @@ Impacto en la virtualización
 
 
 //Activación de VT-x/AMD-V: Procedimiento para habilitar el soporte de hardware y cómo verificarlo desde el sistema operativo.\\
+
 -Se activa al ingresar a la BIOS y activar Intel Virtualization Technology (VT-x) o SVM Mode (AMD-V), guardar cambios y reiniciar
+
 -Para verificar accedemos al administrador de tareas luego a CPU y verificamos si virtualización esta habilitada
 
 2. GNS3 VM: El Motor de Simulación
+
 //KVM (Kernel-based Virtual Machine): Investigar qué es y por qué es obligatorio que aparezca como "True" en el servidor GNS3 para un rendimientoprofesional.\\
+
 -KVM es una tecnología de virtualización integrada en Linux que permite ejecutar máquinas virtuales con alto rendimiento usando directamente el hardware del procesador
+
 -Porque permite que los dispositivos virtuales funcionen de forma mas eficiente
 
 //Configuración de Recursos: Definir criterios para asignar CPU y RAM a la GNS3 VM sin desestabilizar Windows 11.\\
+
 -Es importante asignar CPU y RAM de forma equilibrada para evitar que el sistema se vuelva lento o inestable como: 
+
 CPU:
 Asignar entre 50% y 70% de los núcleos disponibles
 Ejemplo: si tienes 8 núcleos → usar 4 a 6
+
 RAM:
 Usar entre 40% y 60% de la memoria total
 Ejemplo: 16 GB → asignar 6 a 10 GB
 
 3. Integración con VirtualBox (Local)
+
 //Configuración de Red: Pasos para crear y configurar el adaptador Host-Only para la comunicación GUI-Server.\\
+
 -Los pasos son los siguientes:
+
 Crear un adaptador Host-Only en el software de virtualización (ej. VirtualBox o VMware Workstation).
+
 Configurar una red interna (ejemplo: 192.168.56.0/24).
+
 Asignar una IP al host (ej. 192.168.56.1).
+
 Configurar la GNS3 VM con otra IP del mismo rango (ej. 192.168.56.101).
+
 Verificar la conectividad (ping entre host y VM).
 
 //Modo Promiscuo: Explicar técnicamente por qué es necesario para el tráfico de Capa 2.\\
