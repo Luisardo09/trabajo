@@ -1,4 +1,4 @@
-#  Estructura de la Investigación
+#   Estructura de la Investigación
 1. Arquitectura de Virtualización en Windows 11
 
 //Aislamiento de Núcleo y VBS: Explicar el impacto de las funciones de seguridad de Windows 11 en la virtualización.\\
