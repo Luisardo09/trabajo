@@ -55,6 +55,8 @@ Configurar la GNS3 VM con otra IP del mismo rango (ej. 192.168.56.101).
 
 Verificar la conectividad (ping entre host y VM).
 
+(Observar imagen "Host-Only y Promiscuous Mode"
+
 //Modo Promiscuo: Explicar técnicamente por qué es necesario para el tráfico de Capa 2.\\
 
 -En la Capa 2, los dispositivos trabajan con direcciones MAC y envían tráfico específico dentro de la red. Sin modo promiscuo, la interfaz solo recibe tráfico dirigido a su MAC y se pierden paquetes importantes en simulaciones
@@ -66,6 +68,8 @@ Verificar la conectividad (ping entre host y VM).
 //Arquitectura Cliente-Servidor: Cómo conectar el GUI de GNS3 de la laptop a un servidor ESXi físico.\\
 
 -Configurar red entre laptop y servidor ESXi (puede ser LAN o VPN). luego importamos la máquina virtual de GNS3 en el servidor físico. Abrir GNS3 en la laptop, vamos a Preferences → Server → Remote Server y ingresamo la IP del servidor ESXi y puerto del GNS3 VM, hacemos ping desde GUI a GNS3 VM y nos aseguramos de que el tráfico de control fluya correctamente
+
+(Observar imagen "Multi-Hypervisor y ESXi remoto")
 
 
 //Seguridad en vSwitch: Investigar la configuración de "Políticas de Seguridad" (Promiscuous mode, MAC address changes) en el port group de ESXi.\\
