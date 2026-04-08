@@ -19,7 +19,7 @@ Impacto en la virtualización
 
 -Para verificar accedemos al administrador de tareas luego a CPU y verificamos si virtualización esta habilitada (observar imagen "Virtualizacion")
 
-2. GNS3 VM: El Motor de Simulación
+# 2. GNS3 VM: El Motor de Simulación
 
 //KVM (Kernel-based Virtual Machine): Investigar qué es y por qué es obligatorio que aparezca como "True" en el servidor GNS3 para un rendimientoprofesional.\\
 
@@ -39,7 +39,7 @@ RAM:
 Usar entre 40% y 60% de la memoria total
 Ejemplo: 16 GB → asignar 6 a 10 GB
 
-3. Integración con VirtualBox (Local)
+# 3. Integración con VirtualBox (Local)
 
 //Configuración de Red: Pasos para crear y configurar el adaptador Host-Only para la comunicación GUI-Server.\\
 
@@ -63,7 +63,7 @@ Verificar la conectividad (ping entre host y VM).
 
 -Con modo promiscuo. Se capturan todos los frames Ethernet, permite analizar y reenviar tráfico de switches y routers virtuales
 
-4. Integración con VMware ESXi (Remoto)
+# 4. Integración con VMware ESXi (Remoto)
 
 //Arquitectura Cliente-Servidor: Cómo conectar el GUI de GNS3 de la laptop a un servidor ESXi físico.\\
 
@@ -82,7 +82,7 @@ MAC Address Changes: Controla si la VM puede cambiar su dirección MAC virtual
 
 Forged Transmits:Controla si la VM puede enviar paquetes con MAC diferente a la asignada
 
-5. Matriz de Solución de Errores (Troubleshooting)
+# 5. Matriz de Solución de Errores (Troubleshooting)
 
 //Crear una tabla con al menos 3 errores comunes (ej: KVM not available, uBridge permissions, Firewall blocking port 3080) y su solución técnica\\
 
